@@ -85,6 +85,7 @@
       "react/destructuring-assignment": "off",
       "@typescript-eslint/ban-types": "off",
       "no-console": "warn",
-      "no-duplicate-imports": "warn"
+      "no-duplicate-imports": "warn",
+      "jsx-quotes": ["error", "prefer-double"]
   }
 }
