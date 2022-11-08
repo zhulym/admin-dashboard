@@ -3,13 +3,15 @@ import { useMemo, useState } from "react";
 import { themeSettings } from "theme";
 
 export const useThemeMode = () => {
-  const [mode, setMode] = useState("dark");
+  const [mode, setMode] = useState<PaletteMode>("dark");
 
   const colorMode = useMemo(() => ({
-    toggleColorMode: () => setMode((prev) => (prev === "light" ? "dark" : "light")),
+    // The dark mode switch would invoke this method
+    toggleColorMode: () => setMode((prev: PaletteMode) => (prev === "light" ? "dark" : "light")),
   }), []);
 
-  const theme = useMemo(() => createTheme(themeSettings(mode as PaletteMode)), [mode]);
+  // Update the theme only if the mode changes
+  const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
 
   return [theme, colorMode];
 };
