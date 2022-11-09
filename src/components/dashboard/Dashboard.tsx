@@ -4,7 +4,7 @@ type Props = {};
 
 const Dashboard: FC = (props: Props) => {
   return (
-    <div>: FC</div>
+    <div>Dashboard</div>
   );
 };
 
