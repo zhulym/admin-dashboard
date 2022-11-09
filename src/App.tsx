@@ -1,28 +1,23 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { FC } from 'react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
+import { Route, Routes } from 'react-router-dom';
 
-import { ColorModeContext } from './theme';
-import { useThemeMode } from 'hooks/useThemeMode';
+import { ROUTES } from 'constants/routes';
 
-import TopBar from 'components/top-bar/TopBar';
+import Layout from 'components/layout/Layout';
 
 const App: FC = () => {
-  const [theme, colormode] = useThemeMode();
-
-  // <CssBaseline/> reset styles to default
   return (
-    <ColorModeContext.Provider value={colormode as any}>
-      <ThemeProvider theme={theme as any}>
-        <CssBaseline />
-        <div className="app">
-          <main className="content">
-            <TopBar />
-          </main>
-        </div>
-      </ThemeProvider>
-    </ColorModeContext.Provider>
-
+    <Layout>
+      <Routes>
+        {ROUTES.map(route => (
+          <Route
+            key={route.path}
+            path={route.path}
+            element={route.component}
+          />
+        ))}
+      </Routes>
+    </Layout>
   );
 };
 
