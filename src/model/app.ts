@@ -27,3 +27,12 @@ export interface IInvoicesData {
   phone: string;
   date: string;
 }
+
+export interface IProfileForm {
+  firstName: string;
+  lastName: string;
+  email: string;
+  contact: string;
+  city: string;
+  country: string;
+}
