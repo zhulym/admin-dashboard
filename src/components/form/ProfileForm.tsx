@@ -10,9 +10,11 @@ import DashboardHeader from 'components/dashboard-header/DashboardHeader';
 const ProfileForm: FC = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
 
-  const onSubmit = (values: IProfileForm) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const onSubmit = (values: IProfileForm, { resetForm }: any) => {
     // eslint-disable-next-line no-console
     console.log(values);
+    resetForm();
   };
 
   return (
