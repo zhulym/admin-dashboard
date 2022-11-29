@@ -36,3 +36,10 @@ export interface IProfileForm {
   city: string;
   country: string;
 }
+
+export interface IFaqData {
+  id: string;
+  title: string;
+  question: string;
+
+}
