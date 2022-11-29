@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosPromise } from 'axios';
-import { IContactData, IInvoicesData, ITeamData } from 'model/app';
+import { IContactData, IFaqData, IInvoicesData, ITeamData } from 'model/app';
 
 class ApiService {
   private instance: AxiosInstance;
@@ -11,15 +11,19 @@ class ApiService {
   }
 
   public getTeamData = (): AxiosPromise<ITeamData[]> => {
-    return this.instance.get('/mockTeam.json');
+    return this.instance.get<ITeamData[]>('/mockTeam.json');
   };
 
   public getContactData = (): AxiosPromise<IContactData[]> => {
-    return this.instance.get('/mockContacts.json');
+    return this.instance.get<IContactData[]>('/mockContacts.json');
   };
 
   public getInvoicesData = (): AxiosPromise<IInvoicesData[]> => {
-    return this.instance.get('/mockInvoices.json');
+    return this.instance.get<IInvoicesData[]>('/mockInvoices.json');
+  };
+
+  public getFaqData = (): AxiosPromise<IFaqData[]> => {
+    return this.instance.get<IFaqData[]>('/mockFAQ.json');
   };
 }
 
