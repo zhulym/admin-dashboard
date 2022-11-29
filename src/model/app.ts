@@ -41,5 +41,16 @@ export interface IFaqData {
   id: string;
   title: string;
   question: string;
+}
 
+export interface IPieData {
+  id: string;
+  label: string;
+  value: number;
+  color: string;
+}
+
+export interface IGeographyData {
+  id: string;
+  value: number;
 }

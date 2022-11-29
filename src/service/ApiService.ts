@@ -1,5 +1,7 @@
+import { Serie } from '@nivo/line';
+import { BarDatum } from '@nivo/bar';
 import axios, { AxiosInstance, AxiosPromise } from 'axios';
-import { IContactData, IFaqData, IInvoicesData, ITeamData } from 'model/app';
+import { IContactData, IFaqData, IGeographyData, IInvoicesData, IPieData, ITeamData } from 'model/app';
 
 class ApiService {
   private instance: AxiosInstance;
@@ -24,6 +26,22 @@ class ApiService {
 
   public getFaqData = (): AxiosPromise<IFaqData[]> => {
     return this.instance.get<IFaqData[]>('/mockFAQ.json');
+  };
+
+  public getBarData = (): AxiosPromise<BarDatum[]> => {
+    return this.instance.get<BarDatum[]>('/mockBar.json');
+  };
+
+  public getPieData = (): AxiosPromise<IPieData[]> => {
+    return this.instance.get<IPieData[]>('/mockPie.json');
+  };
+
+  public getLineData = (): AxiosPromise<Serie[]> => {
+    return this.instance.get<Serie[]>('/mockLine.json');
+  };
+
+  public getGeographyData = (): AxiosPromise<IGeographyData[]> => {
+    return this.instance.get<IGeographyData[]>('/mockGeography.json');
   };
 }
 
