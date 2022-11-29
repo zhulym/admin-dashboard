@@ -1,10 +1,19 @@
 import React, { FC } from 'react';
+import { Box } from '@mui/material';
+
+import LineChart from './LineChart';
+import DashboardHeader from 'components/dashboard-header/DashboardHeader';
 
 type Props = {};
 
 const Line: FC = (props: Props) => {
   return (
-    <div>Line</div>
+    <Box m="20px">
+      <DashboardHeader title="Line Chart" subtitle="Simple Line Chart" />
+      <Box height="75vh">
+        <LineChart />
+      </Box>
+    </Box>
   );
 };
 
