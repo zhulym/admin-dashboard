@@ -25,7 +25,6 @@ const SideBarItem: FC<IProps> = ({ title, path, icon, selected, setSelected }) =
     <MenuItem
       icon={icon}
       onClick={onMenuItem}
-      active={selected === title}
       style={{ color: colors.grey[100] }}
       routerLink={<Link to={path} />}
     >
