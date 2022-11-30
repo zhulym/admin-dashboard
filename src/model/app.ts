@@ -54,3 +54,29 @@ export interface IGeographyData {
   id: string;
   value: number;
 }
+
+export interface ITransaction {
+  txId: string;
+  user: string;
+  date: string;
+  cost: string;
+}
+
+export interface IStats {
+  title: string;
+  subtitle: string;
+  progress: string;
+  increase: string;
+}
+
+export interface IDashboardData {
+  transactions: ITransaction[];
+  stats: IStats[];
+}
+
+export enum StatsTypes {
+  Email = 'Emails Sent',
+  Sale = 'Sales Obtained',
+  Client = 'New Clients',
+  Traffic = 'Traffic Received',
+}

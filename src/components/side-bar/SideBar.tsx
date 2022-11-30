@@ -123,6 +123,15 @@ const SideBar: FC = () => {
             ))}
           </Box>
         </Menu>
+        <Typography variant="h4" sx={{ m: "10px 0 5px 30px" }}>
+          <a
+            href="https://github.com/zhulym"
+            style={{ color: colors.greenAccent[500], textDecoration: "none" }}
+            target="_blanc"
+          >
+            &copy; {new Date().getFullYear()} S.Zhulym
+          </a>
+        </Typography>
       </Sidebar>
     </Box >
   );
