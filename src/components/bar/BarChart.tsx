@@ -23,7 +23,6 @@ const BarChart: FC<IProps> = ({ isDashboard = false }) => {
     <ResponsiveBar
       data={data || []}
       theme={{
-        // added
         tooltip: {
           container: {
             color: colors.primary[500]
@@ -89,19 +88,19 @@ const BarChart: FC<IProps> = ({ isDashboard = false }) => {
       }}
       axisTop={null}
       axisRight={null}
-      axisBottom={{
+      axisBottom={!isDashboard ? {
         tickSize: 5,
-        tickPadding: 5,
+        tickPadding: 10,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "Country", // changed
+        legend: isDashboard ? undefined : "Country",
         legendPosition: "middle",
         legendOffset: 32,
-      }}
+      } : null}
       axisLeft={{
         tickSize: 5,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "Food", // changed
+        legend: isDashboard ? undefined : "Food",
         legendPosition: "middle",
         legendOffset: -40,
       }}
