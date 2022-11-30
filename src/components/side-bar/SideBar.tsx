@@ -74,7 +74,7 @@ const SideBar: FC = () => {
           <Box>
             <SideBarItem
               title="Dashboard"
-              path="/"
+              path="/admin-dashboard"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}

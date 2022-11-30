@@ -13,17 +13,17 @@ import PieChartOutlineOutlinedIcon from "@mui/icons-material/PieChartOutlineOutl
 export const SIDE_BAR_DATA = [
   {
     title: "Manage Team",
-    path: "/team",
+    path: "/admin-dashboard/team",
     icon: <PeopleOutlinedIcon />
   },
   {
     title: "Contacts Information",
-    path: "/contacts",
+    path: "/admin-dashboard/contacts",
     icon: <ContactsOutlinedIcon />
   },
   {
     title: "Invoices Balances",
-    path: "/invoices",
+    path: "/admin-dashboard/invoices",
     icon: <ReceiptOutlinedIcon />
   },
 ];
@@ -31,17 +31,17 @@ export const SIDE_BAR_DATA = [
 export const SIDE_BAR_PAGES = [
   {
     title: "Profile Form",
-    path: "/form",
+    path: "/admin-dashboard/form",
     icon: <PersonOutlinedIcon />
   },
   {
     title: "Calendar",
-    path: "/calendar",
+    path: "/admin-dashboard/calendar",
     icon: <CalendarTodayOutlinedIcon />
   },
   {
     title: "FAQ Page",
-    path: "/faq",
+    path: "/admin-dashboard/faq",
     icon: <HelpOutlineOutlinedIcon />
   },
 ];
@@ -49,22 +49,22 @@ export const SIDE_BAR_PAGES = [
 export const SIDE_BAR_CHARTS = [
   {
     title: "Bar Chart",
-    path: "/bar",
+    path: "/admin-dashboard/bar",
     icon: <BarChartOutlinedIcon />
   },
   {
     title: "Pie Chart",
-    path: "/pie",
+    path: "/admin-dashboard/pie",
     icon: <PieChartOutlineOutlinedIcon />
   },
   {
     title: "Line Chart",
-    path: "/line",
+    path: "/admin-dashboard/line",
     icon: <TimelineOutlinedIcon />
   },
   {
     title: "Geography Chart",
-    path: "/geography",
+    path: "/admin-dashboard/geography",
     icon: <MapOutlinedIcon />
   },
 ];

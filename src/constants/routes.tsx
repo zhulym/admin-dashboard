@@ -13,47 +13,47 @@ import Team from 'components/team/Team';
 
 export const ROUTES = [
   {
-    path: '/',
+    path: '/admin-dashboard',
     component: <Dashboard />
   },
   {
-    path: '/team',
+    path: '/admin-dashboard/team',
     component: <Team />
   },
   {
-    path: '/contacts',
+    path: '/admin-dashboard/contacts',
     component: <Contacts />
   },
   {
-    path: '/invoices',
+    path: '/admin-dashboard/invoices',
     component: <Invoices />
   },
   {
-    path: '/form',
+    path: '/admin-dashboard/form',
     component: <ProfileForm />
   },
   {
-    path: '/bar',
+    path: '/admin-dashboard/bar',
     component: <Bar />
   },
   {
-    path: '/pie',
+    path: '/admin-dashboard/pie',
     component: <Pie />
   },
   {
-    path: '/line',
+    path: '/admin-dashboard/line',
     component: <Line />
   },
   {
-    path: '/faq',
+    path: '/admin-dashboard/faq',
     component: <Faq />
   },
   {
-    path: '/calendar',
+    path: '/admin-dashboard/calendar',
     component: <Calendar />
   },
   {
-    path: '/geography',
+    path: '/admin-dashboard/geography',
     component: <Geography />
   },
 ];
