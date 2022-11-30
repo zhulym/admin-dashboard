@@ -1,0 +1,78 @@
+  {
+    "transactions": [
+      {
+        "txId": "Article: 001687",
+        "user": "John Doe",
+        "date": "2021-09-01",
+        "cost": "43.95"
+      },
+      {
+        "txId": "Article: 001697",
+        "user": "Jack Dower",
+        "date": "2022-04-01",
+        "cost": "133.45"
+      },
+      {
+        "txId": "Article: 001647",
+        "user": "Aber Dohny",
+        "date": "2021-09-01",
+        "cost": "43.95"
+      },
+      {
+        "txId": "Article: 021687",
+        "user": "Goodman Ave",
+        "date": "2022-11-05",
+        "cost": "200.95"
+      },
+      {
+        "txId": "Article: 011687",
+        "user": "Steve Bower",
+        "date": "2022-11-02",
+        "cost": "13.55"
+      },
+      {
+        "txId": "Article: 001978",
+        "user": "Albert Any",
+        "date": "2021-09-01",
+        "cost": "43.95"
+      },
+      {
+        "txId": "Article: 061687",
+        "user": "Woot Zifer",
+        "date": "2019-04-15",
+        "cost": "24.20"
+      },
+      {
+        "txId": "Article: 069687",
+        "user": "Ben Hower",
+        "date": "2022-04-01",
+        "cost": "133.45"
+      }
+    ],
+    "stats": [
+      {
+        "title": "12,361",
+        "subtitle": "Emails Sent",
+        "progress": "0.75",
+        "increase": "+14%"
+      },
+      {
+        "title": "431,225",
+        "subtitle": "Sales Obtained",
+        "progress": "0.50",
+        "increase": "+21%"
+      },
+      {
+        "title": "32,441",
+        "subtitle": "New Clients",
+        "progress": "0.30",
+        "increase": "+5%"
+      },
+      {
+        "title": "1,325,134",
+        "subtitle": "Traffic Received",
+        "progress": "0.80",
+        "increase": "+43%"
+      }
+    ]
+  }
